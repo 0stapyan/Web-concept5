@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alef">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+</head>
+<body>
+    <h1>My Bookshelf</h1>
+    <form id="book-form">
+        <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" required>
+        </div>
+        <div>
+            <label for="authors">Authors:</label>
+            <input type="text" id="authors" required>
+        </div>
+        <div>
+            <label for="pages">Number of Pages:</label>
+            <input type="number" id="pages" required>
+        </div>
+        <div>
+            <label for="isRead">Read:</label>
+            <input type="checkbox" id="isRead">
+        </div>
+        <div>
+            <label for="isFavorite">Favorite:</label>
+            <input type="checkbox" id="isFavorite">
+        </div>
+        <button id="add-button" type="submit">Add Book</button>
+    </form>    
+
+    <h2>Books</h2>
+    <ul id="book-list"></ul>
+
+    <script src="scripts/script.js"></script>
+
+    <p id="total-books">Total Books: 0</p>
+
+    <button id="unread-button">Show Unread Books</button>
+    <button id="fav-button">Show Favorite Books</button>
+
+</body>
+</html>
